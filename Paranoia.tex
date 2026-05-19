@@ -1,26 +1,21 @@
-\documentclass[UTF8, scheme=chinese, openany]{ctexbook}
+\documentclass[UTF8, scheme = chinese, openany]{ctexbook}
 
 \usepackage[hidelinks]{hyperref}
 
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{1}
 
+\xeCJKsetup{AutoFallBack = true, CheckSingle = true}
+
+\setCJKmainfont{LXGWNeoZhiSong}[
+Path = ./fonts/,
+Extension = .ttf,
+BoldFont = LXGWNeoXiHei
+]
+
 \title{妄想症Paranoia}
 \author{雨狸}
 \date{}
-
-\xeCJKsetup{AutoFallBack=true}
-\setCJKfallbackfamilyfont{\CJKrmdefault}{BabelStoneHan}[
-Path = ./fonts/,
-Extension = .ttf,
-BoldFont = LXGWNeoXiHeiPlus
-]
-
-\setCJKmainfont{ARPLSungtiLGB}[
-Path = ./fonts/,
-Extension = .ttf,
-BoldFont = DroidSansFallback
-]
 
 \begin{document}
 
