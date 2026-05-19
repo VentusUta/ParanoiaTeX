@@ -13,6 +13,4 @@
 
 此仓库包含数个排版中所用的字体文件（fonts目录下），它们的版权是：
 
-- ARPLSungtiLGB.ttf、BabelStoneHan.ttf：[Arphic Public License](https://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE)
-- DroidSansFallback.ttf：[Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)
-- LXGWNeoXiHeiPlus.ttf：[IPA Font License Agreement v1.0](https://moji.or.jp/ipafont/license/)
+- LXGWNeoZhiSong.ttf、LXGWNeoXiHei.ttf：[IPA Font License Agreement v1.0](https://moji.or.jp/ipafont/license/)
