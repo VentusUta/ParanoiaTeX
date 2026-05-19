@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  MAIN_FILE: "妄想症Paranoia.tex"
+  MAIN_FILE: "Paranoia.tex"
 
 jobs:
   build:
