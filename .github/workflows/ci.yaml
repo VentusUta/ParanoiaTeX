@@ -1,0 +1,36 @@
+name: Compile XeTeX document
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  MAIN_FILE: "妄想症Paranoia.tex"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Show TeX environment info
+        run: |
+          xelatex --version
+          latexmk --version
+
+      - name: Compile XeTeX document
+        run: |
+          latexmk -xelatex -interaction=nonstopmode -file-line-error "${{ env.MAIN_FILE }}"
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-pdf
+          path: "*.pdf"
+          if-no-files-found: error
